@@ -1,0 +1,2 @@
+# Hoja_De_Ruta_Nicki_Thiago_G7Cripto_Abril2026
+Hoja_De_Ruta_Nicki_Thiago_G7Cripto_Abril2026
