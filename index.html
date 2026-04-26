@@ -389,6 +389,122 @@
     .toc { padding: 0 20px; }
     .grid-2, .grid-3, .ally-grid, .pillar-grid, .values-grid, .comm-grid, .eval-grid { grid-template-columns: 1fr; }
   }
+
+
+  /* ===============================
+     PALETA SUAVE · G7Cripto 2026
+     Versión de menor contraste visual
+     =============================== */
+  :root {
+    --gold: #B8924A;
+    --gold-light: #6D5524;
+    --gold-dark: #7A612E;
+    --dark: #F6F1E8;
+    --dark-2: #FFFBF4;
+    --dark-3: #F1E8D8;
+    --dark-4: #E8DDCA;
+    --dark-5: #BDAF9B;
+    --white: #2E2923;
+    --muted: #8B7D6B;
+    --muted-2: #5F564A;
+    --pur: #746BB8;
+    --pur-bg: #ECEAFA;
+    --teal: #2E8E73;
+    --teal-bg: #E8F5F0;
+    --amb: #B47A2D;
+    --amb-bg: #F7EBD8;
+    --blue: #3F7EAE;
+    --blue-bg: #E7F1F8;
+    --green: #4F8F45;
+    --green-bg: #EAF4E7;
+    --red-bg: #F8E8E6;
+    --red: #C86767;
+    --border: rgba(70,55,35,0.10);
+    --border-gold: rgba(184,146,74,0.28);
+  }
+
+  body {
+    background: linear-gradient(180deg, #F8F3EA 0%, #F3EBDC 100%);
+  }
+
+  .doc-header {
+    background: linear-gradient(135deg, #FFF9EF 0%, #F4E8D5 100%);
+    box-shadow: 0 8px 24px rgba(80, 62, 36, 0.06);
+  }
+
+  .doc-header::before {
+    background: radial-gradient(circle, rgba(184,146,74,0.13) 0%, transparent 70%);
+  }
+
+  .toc {
+    background: #F1E8D8;
+  }
+
+  .card, .idea-card {
+    background: rgba(255,251,244,0.92);
+    box-shadow: 0 10px 26px rgba(80, 62, 36, 0.05);
+  }
+
+  .card-head, .idea-head {
+    background: rgba(241,232,216,0.42);
+  }
+
+  .mini-card, .pillar, .val-card, .eval-card {
+    background: #F8F1E6;
+  }
+
+  .b-gray {
+    background: #EFE7D8;
+    color: #655C50;
+    border-color: rgba(70,55,35,0.12);
+  }
+
+  .hl-gold p { color: #6D5524; }
+  .hl-pur p { color: #50498D; }
+  .hl-teal p { color: #246E5A; }
+  .hl-amb p { color: #7C5424; }
+  .hl-blue p { color: #31658B; }
+  .hl-red p { color: #A34F4F; }
+
+  .hook {
+    background: #EFE4D0;
+    color: #6D5524;
+  }
+
+  .comm-ok {
+    background: #EAF4E7;
+    border-color: rgba(79,143,69,0.22);
+  }
+
+  .comm-no {
+    background: #F8E8E6;
+    border-color: rgba(200,103,103,0.22);
+  }
+
+  .ally-binance .ally-desc { color: #835E30; }
+  .ally-g7 .ally-desc { color: #356F9E; }
+  .ally-global .ally-desc { color: #2F7D66; }
+
+  .ally-binance .ally-model { color: rgba(180,122,45,0.72); }
+  .ally-g7 .ally-model { color: rgba(63,126,174,0.72); }
+  .ally-global .ally-model { color: rgba(46,142,115,0.72); }
+
+  th {
+    color: #766B5C;
+  }
+
+  td {
+    color: #5F564A;
+  }
+
+  tr {
+    background: rgba(255,251,244,0.45);
+  }
+
+  a, .toc a:hover {
+    text-underline-offset: 3px;
+  }
+
 </style>
 </head>
 <body>
@@ -398,6 +514,15 @@
   <div class="doc-eyebrow">G7Fintech SAS · Documento interno · Gerencia → Nicki & Thiago · Abril 2026</div>
   <div class="doc-title">Hoja de Ruta —<br><span>Nicki & Thiago</span></div>
   <div class="doc-sub">G7BSPay LATAM → G7Cripto · Transformación de marca y operación · Uso confidencial del equipo</div>
+
+  <div style="background:rgba(201,168,76,0.08); border:1px solid var(--border-gold); border-radius:10px; padding:12px 16px; margin-bottom:20px; display:flex; align-items:flex-start; gap:12px;">
+    <div style="font-size:18px; flex-shrink:0; margin-top:1px;">📌</div>
+    <div>
+      <div style="font-size:12px; font-weight:600; color:var(--gold); letter-spacing:0.05em; text-transform:uppercase; margin-bottom:5px;">Nota aclaratoria — Vigencia de esta Hoja de Ruta</div>
+      <p style="font-size:13px; color:var(--gold-light); line-height:1.65; margin:0 0 6px;">Esta Hoja de Ruta cubre el período de <strong style="color:var(--gold);">abril y mayo de 2026</strong>. Es el documento de trabajo oficial del equipo durante estos dos meses.</p>
+      <p style="font-size:13px; color:var(--gold-light); line-height:1.65; margin:0;">En la <strong style="color:var(--gold);">última semana de mayo de 2026</strong>, Gerencia, Nicki y Thiago deberán reunirse para planear la Hoja de Ruta correspondiente a <strong style="color:var(--gold);">junio y julio de 2026</strong>, incorporando los aprendizajes, ajustes y nuevos objetivos del período.</p>
+    </div>
+  </div>
   <div class="badge-row">
     <span class="badge b-pur">Nicki · Líder de Marketing</span>
     <span class="badge b-teal">Thiago · Embajador</span>
@@ -419,6 +544,8 @@
   <a href="#s7">7. Evaluación</a>
   <a href="#s8">8. Ideas de contenido</a>
   <a href="#s9">9. Lenguaje y FAQ</a>
+  <a href="#s10">10. Lalexpo</a>
+  <a href="#s11">11. App & Wallets</a>
 </nav>
 
 <div class="main">
@@ -1000,7 +1127,317 @@
     </div>
   </div>
 
+  <!-- SECCIÓN 10: CONDICIONES ESPECIALES LALEXPO -->
+  <div class="section-wrap" id="s10">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-title">Condiciones especiales — Lalexpo 2026</div>
+      <div class="section-tag">Registros en evento · 9 Abril 2026</div>
+    </div>
+
+    <!-- Propuesta y soporte de prueba -->
+    <div class="card" style="border-color:var(--border-gold); margin-bottom:12px;">
+      <div class="card-head" style="border-bottom-color:var(--border-gold);">
+        <div class="card-icon" style="background:rgba(201,168,76,0.15);">🎪</div>
+        <h3 style="color:var(--gold);">Propuesta Gerencia — Lalexpo · 9 de Abril de 2026</h3>
+        <span class="card-sub">Comisión vitalicia por registro</span>
+      </div>
+      <div class="card-body">
+        <p style="font-size:13px; color:var(--muted-2); line-height:1.7; margin-bottom:14px;">
+          El 9 de abril de 2026, Gerencia (Guillermo Valencia) propuso a <strong style="color:var(--white);">Thiago Santiago</strong> y a <strong style="color:var(--white);">Nicki</strong> la siguiente condición comercial especial para registros captados durante la Lalexpo:
+        </p>
+
+        <div class="hl-box hl-gold">
+          <div class="hl-label" style="color:var(--gold);">Condición acordada — VITALICIA</div>
+          <p>Por cada registro captado en la <strong>Lalexpo</strong>, G7Cripto ofrece a Thiago y Nicki el <strong>0,25% del margen de $177 pesos</strong> por operación — de forma <strong>vitalicia</strong>, no solo sobre el primer retiro.</p>
+        </div>
+
+        <div class="hl-box hl-teal" style="margin-top:10px;">
+          <div class="hl-label">Soporte de prueba — WhatsApp Thiago Santiago · 9–10 Abril 2026</div>
+          <p>Thiago preguntó: <em>"Guille pero sería el 0.25% de qué? ¿Del primer retiro o vitalicio?"</em></p>
+          <p>Guillermo respondió: <strong>"Vitalicio."</strong> (10/4/2026 · 7:47 a.m.)</p>
+          <p style="margin-top:6px;">Thiago indicó que hablaría con Nicki antes de confirmar: <em>"Listo Guille, déjame yo lo hablo con Nicki y te comentamos. Porque debo hablarlo también con ella. A ver si le suena así."</em></p>
+        </div>
+
+        <div class="hl-box hl-pur" style="margin-top:10px;">
+          <div class="hl-label">Beneficio adicional — TRM preferencial para nuevos usuarios del evento</div>
+          <p>Los usuarios nuevos registrados en la <strong>Lalexpo</strong> recibirán una <strong>Tasa de Cambio (TRM) preferencial</strong> — mejor que la tasa estándar de la plataforma. Beneficio exclusivo para registros captados durante el evento, como incentivo para que el usuario decida en el momento.</p>
+        </div>
+
+        <div class="table-wrap" style="margin-top:14px;">
+          <table>
+            <thead>
+              <tr><th>Quién</th><th>Condición</th><th>% sobre margen $177</th><th>Vigencia</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Thiago</strong></td><td>Comisión base por referido</td><td>0,5%</td><td>Vitalicio</td></tr>
+              <tr><td><strong>Referido de Thiago</strong></td><td>Beneficio en tasa (base)</td><td>0,5%</td><td>Vitalicio</td></tr>
+              <tr><td><strong style="color:var(--gold);">Thiago / Nicki</strong></td><td><strong style="color:var(--gold);">Registro captado en Lalexpo</strong></td><td><strong style="color:var(--gold);">0,25%</strong></td><td><strong style="color:var(--gold);">Vitalicio ✓</strong></td></tr>
+              <tr><td><strong>Usuario nuevo · Lalexpo</strong></td><td>TRM preferencial</td><td>—</td><td>Exclusivo del evento</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge b-gold">Lalexpo · Abril 2026</span>
+          <span class="badge b-gray">Propuesto Gerencia · 9 Abr 2026</span>
+          <span class="badge b-teal">Thiago</span>
+          <span class="badge b-pur">Nicki</span>
+          <span class="badge b-amb">0,25% vitalicio · margen $177</span>
+          <span class="badge b-blue">TRM preferencial · nuevos usuarios</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estrategia de captación -->
+    <div class="card" style="border-color:var(--border-gold);">
+      <div class="card-head" style="border-bottom-color:var(--border-gold);">
+        <div class="card-icon" style="background:rgba(201,168,76,0.15);">🗂️</div>
+        <h3 style="color:var(--gold);">Estrategia de captación — libertad total a Nicki y Thiago</h3>
+        <span class="card-sub">Gerencia delega · equipo decide</span>
+      </div>
+      <div class="card-body">
+        <p style="font-size:13px; color:var(--muted-2); line-height:1.7; margin-bottom:14px;">
+          Gerencia otorgó <strong style="color:var(--white);">libertad total</strong> a Nicki y Thiago para definir y organizar la mejor estrategia de captación durante la Lalexpo. Ellos deciden el método, el flujo y las herramientas — con la única condición de llevar un <strong style="color:var(--white);">registro claro de atribución</strong> por cada nuevo usuario captado.
+        </p>
+
+        <div class="hl-box hl-amb">
+          <div class="hl-label">Opciones de captación — Nicki y Thiago deciden</div>
+          <p><strong>Opción A — Registro directo en evento:</strong> Captar el registro en el momento usando la app o un formulario digital, con prueba (foto, pantalla, anotación) de que el usuario fue captado por Nicki o Thiago.</p>
+          <p style="margin-top:6px;"><strong>Opción B — Landing page de registro rápido:</strong> Recolectar datos del interesado en el evento y contactarlo después para acompañarlo en el registro completo. La landing permite trazabilidad del origen del lead por captador.</p>
+          <p style="margin-top:6px;"><strong>Opción C — Combinación:</strong> Registro inmediato para quien pueda hacerlo en el momento + landing page para quienes prefieran registrarse después con acompañamiento.</p>
+        </div>
+
+        <div style="margin-top:14px;">
+          <div style="font-size:12px; font-weight:600; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; margin-bottom:10px;">Sistema de atribución — quién captó a quién</div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Captador</th><th>Rol en el evento</th><th>Comisión / beneficio</th><th>Cómo registrar</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong style="color:var(--teal);">Thiago</strong></td><td>Embajador · cara visible del gremio</td><td>0,25% vitalicio del margen $177</td><td>Foto, pantalla o landing con tag Thiago</td></tr>
+                <tr><td><strong style="color:var(--pur);">Nicki</strong></td><td>Líder de Marketing · coordinación evento</td><td>0,25% vitalicio del margen $177</td><td>Foto, pantalla o landing con tag Nicki</td></tr>
+                <tr><td><strong style="color:var(--amb);">Hammer Tapias</strong></td><td>Líder Comercial · cierre y negociación</td><td>Según esquema comercial vigente</td><td>Registro en Bitrix como lead comercial</td></tr>
+                <tr><td><strong style="color:var(--amb);">DRILLER / Oscar Gallego</strong></td><td>Contenido corporativo · presencia de marca</td><td>Según esquema vigente</td><td>Registro identificado por captador en sistema</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="hl-box hl-blue" style="margin-top:14px;">
+          <div class="hl-label">Condición clave para el cobro del 0,25% vitalicio</div>
+          <p>Para que aplique la comisión vitalicia a Nicki o Thiago, el registro debe tener <strong>prueba clara de atribución</strong> — ya sea vía landing page con identificador del captador, registro en sistema, foto del momento, o evidencia acordada por el equipo antes del evento.</p>
+          <p style="margin-top:6px;">Los registros <strong>sin atribución clara</strong> se asignarán al canal general de Gerencia / Hammer Tapias.</p>
+        </div>
+
+        <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge b-gold">Estrategia definida por Nicki + Thiago</span>
+          <span class="badge b-gray">Gerencia delega · revisión en Bitrix</span>
+          <span class="badge b-blue">Landing page de registro rápido disponible</span>
+          <span class="badge b-amb">Atribución obligatoria por captador</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 11: APP, WALLETS Y PASO A PASO DEL USUARIO -->
+  <div class="section-wrap" id="s11">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <div class="section-title">App G7Cripto — Wallets, estado actual y experiencia del usuario</div>
+      <div class="section-tag">Actualización Abril 2026</div>
+    </div>
+
+    <!-- Estado actual de la app -->
+    <div class="card" style="border-color:var(--border-gold); margin-bottom:12px;">
+      <div class="card-head" style="border-bottom-color:var(--border-gold);">
+        <div class="card-icon" style="background:rgba(201,168,76,0.15);">⚡</div>
+        <h3 style="color:var(--gold);">Estado actual de la app — Abril 2026</h3>
+        <span class="card-sub">En proceso de ajustes</span>
+      </div>
+      <div class="card-body">
+        <div class="hl-box hl-teal">
+          <div class="hl-label">Novedad activa</div>
+          <p>G7Cripto ya genera de forma <strong>automática</strong> las wallets de mayor uso del mercado cripto en el momento del registro. El usuario no necesita configurar nada manualmente.</p>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="mini-card" style="border-color:rgba(38,161,123,0.3); background:#0A1F18;">
+            <div class="mc-title" style="color:#26A17B;">USDT</div>
+            <div class="mc-sub" style="color:#1a7a5a;">Tether · USD Tether</div>
+            <div class="mc-desc">La stablecoin más usada del mundo. Generada automáticamente al registrarse.</div>
+          </div>
+          <div class="mini-card" style="border-color:rgba(39,117,202,0.3); background:#0A1225;">
+            <div class="mc-title" style="color:#2775CA;">USDC</div>
+            <div class="mc-sub" style="color:#1a4d8a;">USD Coin · Circle</div>
+            <div class="mc-desc">Stablecoin regulada y transparente. Generada automáticamente al registrarse.</div>
+          </div>
+          <div class="mini-card" style="border-color:rgba(98,126,234,0.3); background:#0E1228;">
+            <div class="mc-title" style="color:#627EEA;">ETH</div>
+            <div class="mc-sub" style="color:#4060c0;">Ethereum</div>
+            <div class="mc-desc">La red de contratos inteligentes más importante. Wallet generada automáticamente.</div>
+          </div>
+          <div class="mini-card" style="border-color:rgba(247,147,26,0.3); background:#1A1000;" style="grid-column: span 3;">
+            <div class="mc-title" style="color:#F7931A;">BTC</div>
+            <div class="mc-sub" style="color:#c07010;">Bitcoin</div>
+            <div class="mc-desc">La criptomoneda más importante y reconocida del mundo. Wallet generada automáticamente.</div>
+          </div>
+        </div>
+
+        <div class="hl-box hl-amb" style="margin-top:14px;">
+          <div class="hl-label">Ajustes en curso — lunes 27 de Abril de 2026</div>
+          <p>Actualmente se están realizando correcciones y optimizaciones en la app. El <strong>lunes 27 de abril de 2026</strong> se tendrán los ajustes necesarios aplicados. El proceso de actualización continuará de forma progresiva hasta tener todo <strong>100% organizado y estable</strong>.</p>
+          <p style="margin-top:6px;">Nicki y Thiago deben tener esto presente para la comunicación con la comunidad: si hay consultas sobre la app, informar que está en proceso de mejora continua y que el equipo está trabajando para tener todo perfecto.</p>
+        </div>
+
+        <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge b-teal">USDT · automático</span>
+          <span class="badge b-blue">USDC · automático</span>
+          <span class="badge b-pur">ETH · automático</span>
+          <span class="badge b-amb">BTC · automático</span>
+          <span class="badge b-gold">Ajustes: Lunes 27 Abr 2026</span>
+          <span class="badge b-gray">Actualización continua hasta 100%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PASO A PASO DEL USUARIO -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon" style="background:var(--teal-bg);">📲</div>
+        <h3>Paso a paso — desde que descarga la app hasta recibir su pago</h3>
+        <span class="card-sub">Experiencia completa del usuario</span>
+      </div>
+      <div class="card-body">
+        <p style="font-size:13px; color:var(--muted-2); line-height:1.7; margin-bottom:16px;">Este es el flujo completo que vive un usuario del gremio desde que conoce G7Cripto hasta que el dinero llega a su cuenta local. Nicki y Thiago deben conocerlo para explicarlo con naturalidad.</p>
+
+        <div class="flow">
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--pur-bg); color:var(--pur); border-color:rgba(139,127,232,0.5);">1</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Descarga la app</div>
+              <div class="fd">El usuario busca <strong style="color:var(--white);">G7Cripto</strong> en el App Store (iOS) o Google Play (Android) y la descarga. Es gratuita.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--pur-bg); color:var(--pur); border-color:rgba(139,127,232,0.5);">2</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Crea su cuenta — Registro</div>
+              <div class="fd">Ingresa su nombre, correo electrónico, país y crea una contraseña segura. En pocos segundos su cuenta queda activa.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--blue-bg); color:var(--blue); border-color:rgba(91,174,240,0.5);">3</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Verificación KYC — Identidad</div>
+              <div class="fd">Para habilitar retiros, el usuario completa el proceso de verificación de identidad (KYC): sube una foto de su documento de identidad y una selfie. Este paso es obligatorio por normativa y garantiza la seguridad de la cuenta. Generalmente se aprueba en minutos.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--amb-bg); color:var(--amb); border-color:rgba(232,168,76,0.5);">4</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Wallets generadas automáticamente</div>
+              <div class="fd">Al completar el registro, G7Cripto genera de forma <strong style="color:var(--white);">automática</strong> las wallets de <strong style="color:#26A17B;">USDT</strong>, <strong style="color:#2775CA;">USDC</strong>, <strong style="color:#627EEA;">ETH</strong> y <strong style="color:#F7931A;">BTC</strong>. El usuario ya tiene sus direcciones listas para recibir pagos — sin ningún paso adicional.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--amb-bg); color:var(--amb); border-color:rgba(232,168,76,0.5);">5</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Configura su cuenta bancaria local para retiros</div>
+              <div class="fd">El usuario registra su cuenta bancaria en su país (número de cuenta, banco, tipo de cuenta). Esta será la cuenta donde recibirá sus retiros en moneda local vía <strong style="color:var(--white);">Global66 (BaaS)</strong>.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--teal-bg); color:var(--teal); border-color:rgba(78,203,160,0.5);">6</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Comparte su dirección de wallet con la plataforma</div>
+              <div class="fd">El usuario copia la dirección de su wallet (USDT, USDC, ETH o BTC según lo que pague la plataforma) y la registra como método de pago en su cuenta de la plataforma de contenido. Desde ese momento, sus pagos llegarán directamente a G7Cripto.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--teal-bg); color:var(--teal); border-color:rgba(78,203,160,0.5);">7</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Recibe su pago en la wallet G7Cripto</div>
+              <div class="fd">La plataforma internacional envía el pago en cripto o USD. El saldo aparece disponible en la app G7Cripto en tiempo real. El usuario ve exactamente cuánto recibió, en qué moneda y a qué hora — sin cajas negras.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--green-bg); color:var(--green); border-color:rgba(114,200,90,0.5);">8</div>
+              <div class="flow-line"></div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">Solicita su retiro en moneda local</div>
+              <div class="fd">El usuario toca "Retirar", selecciona el monto, ve la tasa de conversión aplicada (TRM) y confirma. G7Cripto procesa la conversión Cripto → Fiat a través de <strong style="color:var(--white);">Global66 (BaaS)</strong> para los 7 países de LATAM, o en USD vía <strong style="color:var(--white);">G7 Business Solutions Corp.</strong> si aplica.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-left">
+              <div class="flow-num" style="background:var(--green-bg); color:var(--green); border-color:rgba(114,200,90,0.5);">9</div>
+            </div>
+            <div class="flow-content">
+              <div class="ft">El dinero llega a su cuenta bancaria — mismo día ✓</div>
+              <div class="fd">El retiro llega a la cuenta bancaria local del usuario <strong style="color:var(--white);">el mismo día</strong>. Recibe una notificación de confirmación en la app. Sin esperas de días hábiles, sin comisiones ocultas, con trazabilidad completa de toda la operación.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hl-box hl-gold" style="margin-top:16px;">
+          <div class="hl-label" style="color:var(--gold);">Resumen del flujo para Nicki y Thiago</div>
+          <p><strong>Descarga → Registro → KYC → Wallets automáticas → Cuenta bancaria → Comparte dirección → Recibe cripto → Retira en moneda local → Dinero en cuenta el mismo día.</strong></p>
+          <p style="margin-top:6px;">9 pasos. Todo desde la app. Sin intermediarios externos. Sin esperas. Con Binance, Global66 y G7 Corp como infraestructura invisible que lo hace posible.</p>
+        </div>
+
+        <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge b-teal">Mismo día</span>
+          <span class="badge b-pur">KYC obligatorio</span>
+          <span class="badge b-amb">Wallets automáticas</span>
+          <span class="badge b-blue">7 países LATAM</span>
+          <span class="badge b-green">Trazabilidad completa</span>
+          <span class="badge b-gray">Sin comisiones ocultas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div style="text-align:center; padding:32px 0 0; border-top:1px solid var(--border);">
+    <div style="background:rgba(201,168,76,0.06); border:1px solid var(--border-gold); border-radius:10px; padding:14px 20px; margin-bottom:20px; text-align:left;">
+      <div style="font-size:11px; font-weight:600; color:var(--gold); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:6px;">📌 Vigencia y próxima planificación</div>
+      <p style="font-size:13px; color:var(--gold-light); line-height:1.65; margin:0 0 4px;">Esta Hoja de Ruta es válida para <strong style="color:var(--gold);">abril y mayo de 2026</strong>.</p>
+      <p style="font-size:13px; color:var(--gold-light); line-height:1.65; margin:0;">En la <strong style="color:var(--gold);">última semana de mayo</strong>, Gerencia + Nicki + Thiago planean la Hoja de Ruta de <strong style="color:var(--gold);">junio y julio de 2026</strong>.</p>
+    </div>
     <div style="font-size:12px; color:var(--muted);">G7Fintech SAS · Documento interno confidencial · Gerencia Guillermo Valencia · Abril 2026</div>
     <div style="font-size:11px; color:var(--dark-5); margin-top:4px;">G7Cripto · 7 países LATAM · Binance CaaS · Global66 BaaS · G7 Corp ACH</div>
   </div>
